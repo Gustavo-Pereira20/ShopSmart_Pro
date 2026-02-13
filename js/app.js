@@ -106,7 +106,7 @@ function lucro() {
             <ul>
                 <li>Valor de compra: <span> ${v1} </span> </li>
                 <li>Valor de revenda: <span>${v2}</span> </li>       
-                <li>O lucro na compra de um produto de ${v1}R$ e na revenda por ${v2}R$ é de: <span>${v1 - v2}R$</span> </li>
+                <li>O lucro na compra de um produto de ${v2}R$ e na revenda por ${v1}R$ é de: <span>${v1 - v2}R$</span> </li>
             </ul>
         `;
     }
