@@ -17,7 +17,7 @@ function calcularTotal() {
         result.innerHTML = `
             <ul>
                 <li>Quantidade de itens: <span> ${v1} </span> </li>
-                <li>Preço individual: <span>${v2}</span> </li>       
+                <li>Preço individual: <span> R$${v2} </span> </li>       
                 <li>O valor total dos itens é ${v1} * ${v2}: <span> R$${v1 * v2} </span> </li>
             </ul>
         `;
@@ -38,8 +38,8 @@ function desconto() {
         result.style.display = 'flex';
         result.innerHTML = `
             <ul>
-                <li>Valor do item: <span> ${v1} </span> </li>
-                <li>Porcentagem de desconto: <span>${v2}</span> </li>       
+                <li>Valor do item: <span> R$${v1} </span> </li>
+                <li>Porcentagem de desconto: <span> ${v2}% </span> </li>       
                 <li>O valor final de R$${v1} com ${v2}% de desconto corresponde a: <span>${v1 - ((v1 * v2) / 100)}R$</span> </li>
             </ul>
         `;
@@ -60,8 +60,8 @@ function juros() {
         result.style.display = 'flex';
         result.innerHTML = `
             <ul>
-                <li>Valor do item: <span> ${v1} </span> </li>
-                <li>Porcentagem de juros: <span>${v2}</span> </li>       
+                <li>Valor do item: <span> R$${v1} </span> </li>
+                <li>Porcentagem de juros: <span> ${v2}% </span> </li>       
                 <li>O valor final de R$${v1} com acréscimo de ${v2}% de juros corresponde a: <span>${v1 + ((v1 * v2) / 100)}R$</span> </li>
             </ul>
         `;
@@ -82,8 +82,8 @@ function comissao() {
         result.style.display = 'flex';
         result.innerHTML = `
             <ul>
-                <li>Valor do item: <span> ${v1} </span> </li>
-                <li>Porcentagem de comissão: <span>${v2}</span> </li>       
+                <li>Valor do item: <span> R$${v1} </span> </li>
+                <li>Porcentagem de comissão: <span> ${v2}% </span> </li>       
                 <li>Em uma venda de R$${v1}, a comissão de ${v2}% sobre o valor será de: <span>${v1 * (v2 / 100)}R$</span> </li>
             </ul>
         `;
@@ -104,8 +104,8 @@ function lucro() {
         result.style.display = 'flex';
         result.innerHTML = `
             <ul>
-                <li>Valor de venda: <span> ${v1}</span> </li>
-                <li>Valor de compra: <span>${v2}</span> </li>       
+                <li>Valor de venda: <span> R$${v1}</span> </li>
+                <li>Valor de compra: <span> R$${v2} </span> </li>       
                 <li>O lucro na compra de um produto de R$${v2} e na revenda por R$${v1} é de: <span> R$${v1 - v2} </span> </li>
             </ul>
         `;
