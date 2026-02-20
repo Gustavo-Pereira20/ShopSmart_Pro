@@ -18,7 +18,7 @@ function calcularTotal() {
             <ul>
                 <li>Quantidade de itens: <span> ${v1} </span> </li>
                 <li>Preço individual: <span>${v2}</span> </li>       
-                <li>O valor total dos itens é ${v1} * ${v2}: <span>${v1 * v2}R$</span> </li>
+                <li>O valor total dos itens é ${v1} * ${v2}: <span> R$${v1 * v2} </span> </li>
             </ul>
         `;
     }
@@ -40,7 +40,7 @@ function desconto() {
             <ul>
                 <li>Valor do item: <span> ${v1} </span> </li>
                 <li>Porcentagem de desconto: <span>${v2}</span> </li>       
-                <li>O valor final de ${v1}R$ com ${v2}% de desconto corresponde a: <span>${v1 - ((v1 * v2) / 100)}R$</span> </li>
+                <li>O valor final de R$${v1} com ${v2}% de desconto corresponde a: <span>${v1 - ((v1 * v2) / 100)}R$</span> </li>
             </ul>
         `;
     }
@@ -62,7 +62,7 @@ function juros() {
             <ul>
                 <li>Valor do item: <span> ${v1} </span> </li>
                 <li>Porcentagem de juros: <span>${v2}</span> </li>       
-                <li>O valor final de ${v1}R$ com acréscimo de ${v2}% de juros corresponde a: <span>${v1 + ((v1 * v2) / 100)}R$</span> </li>
+                <li>O valor final de R$${v1} com acréscimo de ${v2}% de juros corresponde a: <span>${v1 + ((v1 * v2) / 100)}R$</span> </li>
             </ul>
         `;
     }
@@ -84,7 +84,7 @@ function comissao() {
             <ul>
                 <li>Valor do item: <span> ${v1} </span> </li>
                 <li>Porcentagem de comissão: <span>${v2}</span> </li>       
-                <li>Em uma venda de ${v1}R$, a comissão de ${v2}% sobre o valor será de: <span>${v1 * (v2 / 100)}R$</span> </li>
+                <li>Em uma venda de R$${v1}, a comissão de ${v2}% sobre o valor será de: <span>${v1 * (v2 / 100)}R$</span> </li>
             </ul>
         `;
     }
@@ -104,9 +104,9 @@ function lucro() {
         result.style.display = 'flex';
         result.innerHTML = `
             <ul>
-                <li>Valor de compra: <span> ${v1} </span> </li>
-                <li>Valor de revenda: <span>${v2}</span> </li>       
-                <li>O lucro na compra de um produto de ${v2}R$ e na revenda por ${v1}R$ é de: <span>${v1 - v2}R$</span> </li>
+                <li>Valor de venda: <span> ${v1}</span> </li>
+                <li>Valor de compra: <span>${v2}</span> </li>       
+                <li>O lucro na compra de um produto de R$${v2} e na revenda por R$${v1} é de: <span> R$${v1 - v2} </span> </li>
             </ul>
         `;
     }
